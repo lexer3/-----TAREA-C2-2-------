@@ -104,6 +104,28 @@ a=aa-an;
 	 
  }
 	
+////////////////////////////////////////////////
+ //PARTICIPANTE4-GUARDAR DOCUMENTO TXT//
+ //WENDY ROBINZON//
+
+   void guardar(){
+   ofstream ar;
+   ar.open("registro.txt",los::out);
+   if (ar.fail()){
+           Cout<<"FAIL";
+           exit(1);
+    }
+      ar<<"CEDULA: "<<cedula<<endl;
+          ar<<"NOMBRES: "<<nombres<<endl;
+          ar<<"APELLIDOS: "<<apellidos<<endl;
+          ar<<"PESO: "<<peso<<endl;
+          ar<<"ESTATURA: "<<estatura<<endl;
+          ar<<"AA: "<<an<<endl;
+          ar<<"MM: "<<mn<<endl;
+          ar<<"DD: "<<dn<<endl;
+          Cout<<"EL DOCUMENTO SE HA GUARDO";
+          ar.close();
+}
 	
 	
 	
