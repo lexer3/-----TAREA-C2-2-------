@@ -80,7 +80,31 @@ a=aa-an;
    } 
 	 void mostraed()
    {
-   	cout<<"Su edad es : "<<a<<" Años "<<m<<" MESES "<<d<<" DIAS "<<endl;
+   	cout<<"Su edad es : "<<a<<" AÃ±os "<<m<<" MESES "<<d<<" DIAS "<<endl;
    	
    }
   
+	
+////////////////////////////////////////////////////////
+//PARTICIPANTE3- CALCULAR EL INDICE DE MASA CORPORAL// 
+//ALISSON LUCAS//
+
+ void calimc(float i)
+ {
+   i=peso/(estatura*estatura);
+ 	cout<<"Su IMC es:"<<i<<endl;
+	 
+   if (imc<24){
+ 	cout<<"SU INDICE CORPORAL ES NORMAL"<<endl;
+ 		
+	 
+   }else{
+	cout<<"PELIGRO ESTA GORDO"<<endl;
+	}
+	 
+ }
+	
+	
+	
+	
+	
