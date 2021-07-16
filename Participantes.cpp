@@ -110,12 +110,12 @@ a=aa-an;
 
    void guardar(){
    ofstream ar;
-   ar.open("registro.txt",los::out);
+   ar.open("registro.txt",ios::out);
    if (ar.fail()){
-           Cout<<"FAIL";
+           cout<<"FAIL";
            exit(1);
     }
-      ar<<"CEDULA: "<<cedula<<endl;
+          ar<<"CEDULA: "<<cedula<<endl;
           ar<<"NOMBRES: "<<nombres<<endl;
           ar<<"APELLIDOS: "<<apellidos<<endl;
           ar<<"PESO: "<<peso<<endl;
@@ -123,7 +123,7 @@ a=aa-an;
           ar<<"AA: "<<an<<endl;
           ar<<"MM: "<<mn<<endl;
           ar<<"DD: "<<dn<<endl;
-          Cout<<"EL DOCUMENTO SE HA GUARDO";
+          Cout<<"EL DOCUMENTO SE HA GUARDADO";
           ar.close();
 }
 	
@@ -134,15 +134,15 @@ a=aa-an;
     void rym()
 {
     ifstream ar;
-    String texto;
-    ar.open("registro.txt",los::in);
+    string texto;
+    ar.open("registro.txt",ios::in);
     if(ar.fail()){
-            Cout<<"NO ABRE";
+            cout<<"NO ABRE";
             exit(1);
      }
      while(!ar.eof()){
             getline(ar,texto);
-            Cout<<texto<<endl;
+            cout<<texto<<endl;
      }
      ar.close();
  }
