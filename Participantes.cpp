@@ -127,6 +127,25 @@ a=aa-an;
           ar.close();
 }
 	
-	
+//////////////////////////////////////////////////
+ //WENDY ROBINZON- AQUI SE RECUPERA LOS DATOS DESDE EL DOCUMENTO TXT Y SE LOS MUESTRA//
+/////////////////////////////////////////////////
+
+    void rym()
+{
+    ifstream ar;
+    String texto;
+    ar.open("registro.txt",los::in);
+    if(ar.fail()){
+            Cout<<"NO ABRE";
+            exit(1);
+     }
+     while(!ar.eof()){
+            getline(ar,texto);
+            Cout<<texto<<endl;
+     }
+     ar.close();
+ }
+};	
 	
 	
